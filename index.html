@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- const axios = require("axios") alternatywa w js, to jest po to zeby dzialalo w htmlu  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+    </style>
+<!--    <script type = "text/javascript" src="weather.js" defer></script> &lt;!&ndash; dzieki defer nastepuje najpierw parsowanie htmlu, a dopiero na koncu pobiera sie js, dzieki temu szybciej laduje sie strona &ndash;&gt;-->
+</head>
+<body>
+
+<!--    <h1>Weather App</h1>-->
+<!--    <form> &lt;!&ndash; skrot: form>input + tab &ndash;&gt;-->
+<!--        <input type="text" id="search" placeholder="Search by location"/>-->
+<!--        <div> </div>-->
+<!--    </form>-->
+
+<!--    <form>-->
+<!--        <input type = "button" onclick = "fetchData()" value = "Message Print">-->
+<!--    </form>-->
+
+
+    <div class="wrapper"> <!-- skrot z np.( .wrapper) tworzy div z klasa po kropce nazwa -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="container">
+            <div class="search-container">
+                <input type="text"
+                       placeholder="Enter a city name here"
+                       id="city"
+                       />
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="key.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
